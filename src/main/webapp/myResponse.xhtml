@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" >
+	   
+    <h:head>
+        <title>JSF Response!</title>
+    </h:head>
+
+    <h:body>
+		<h:form> Greetings, 
+			<h:outputText id="greeting" value="#{employeeBean.employeeName}" />
+			<br/>
+			<h:outputText value="#{employeeBean.employeeExists}" rendered="#{employeeBean.employeeExists}"/>
+        </h:form>
+    </h:body>
+</html>
